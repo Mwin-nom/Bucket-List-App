@@ -16,7 +16,8 @@
     <div class="wrapper" style="background-image: url('../css/Images/still-life-colorful-overloaded-bullet-journal.jpg');">
         <div class="inner">
             <form action="../actions/register_user.php" method="post" name="regForm" id="regForm" >
-                <h3>Registration Form</h3>
+            <h3>Register or <a href="login_view.php">Login in</a></h3>
+
                 <div class="form-group">
                     <div class="form-wrapper">
                         <label for="">First Name</label>
@@ -39,14 +40,15 @@
                     <label for="">Confirm Password</label>
                     <input type="password" class="form-control" name="password2" id="password2" required>
                 </div>
-                <div class="checkbox">
-                    <label>
-                        <input type="checkbox"> I accept the Terms of Use & Privacy Policy.
-                        <span class="checkmark"></span>
-                    </label>
-                </div>
+               
                 <button name="regButton">Register Now</button>
+               
             </form>
+
+            <div class="checkbox">
+                <p>Or</p>
+                   <p>  Click here to login</p>
+            </div>
         </div>
     </div>
 </body>

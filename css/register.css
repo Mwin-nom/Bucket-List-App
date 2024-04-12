@@ -102,7 +102,7 @@
     align-items: center;
     justify-content: center;
     padding: 0;
-    background: #ae3c33;
+    background: rgb(31, 187, 235);
     font-size: 13px;
     color: #fff;
     text-transform: uppercase;
@@ -125,7 +125,7 @@
       left: 0;
       right: 0;
       bottom: 0;
-      background: #f11a09;
+      background: rgb(31, 187, 235);
       -webkit-transform: scaleX(0);
       transform: scaleX(0);
       -webkit-transform-origin: 0 50%;
@@ -143,6 +143,8 @@
       transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66); }
   
   .checkbox {
+    
+    font-size: 20px;
     position: relative; }
     .checkbox label {
       padding-left: 22px;
@@ -153,6 +155,8 @@
       cursor: pointer; }
     .checkbox input:checked ~ .checkmark:after {
       display: block; }
+
+    
   
   .checkmark {
     position: absolute;

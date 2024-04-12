@@ -60,6 +60,7 @@ function showNotes() {
                         </div>
                         <div class="bottom-content">
                             <span>${note.date}</span>
+                            <span>${getCompletedCount()} completed</span>
                             <div class="settings">
                                 <i onclick="showMenu(this)" class="uil uil-ellipsis-h"></i>
                                 <ul class="menu">
@@ -83,6 +84,13 @@ function showNotes() {
     addBox.insertAdjacentHTML("afterend", liTag);
   });
 }
+
+// Function to get completed tasks count
+function getCompletedCount() {
+  let completedCount = notes.filter((note) => note.completed).length;
+  return completedCount;
+}
+
 showNotes();
 
 // Event listeners
